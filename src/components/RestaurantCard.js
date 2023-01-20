@@ -7,10 +7,8 @@ const RestaurantCard = ({name,cuisines,totalRatings,address,cloudinaryImageId}) 
   // console.log(props);
     return(
         <>
-       
-
                     <div className="card" >
-                    <img src={IMG_CDN_URL+cloudinaryImageId}className="card-img-top" alt="..."/>
+                    <img src={IMG_CDN_URL+cloudinaryImageId}className="card-img-top" alt="Restaurant Img"/>
                     <div className="card-body">
                       <h5 className="card-title">{name}</h5>
                       <hr/>
@@ -20,8 +18,6 @@ const RestaurantCard = ({name,cuisines,totalRatings,address,cloudinaryImageId}) 
                       {/* <a href="#" className="btn btn-primary">Go somewhere</a> */}
                     </div>
                   </div>     
-           
-       
         </>
     )
 }

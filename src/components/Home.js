@@ -1,6 +1,7 @@
 import {useState,useEffect} from 'react'
 import RestaurantCard from './RestaurantCard'
 import ShimmerCard from './ShimmerCard'
+import {Link} from 'react-router-dom'
 import '.././index.css'
 
 const Home = () =>{
@@ -24,9 +25,14 @@ const Home = () =>{
     : (
         <>
                         <div className="card-border">
-{restaurantList.map((restaurant)=>{
+                {restaurantList.map((restaurant)=>{
+                  //  console.log(restaurant.data.id)
             return(
+                <Link to={"/restaurant/" + restaurant.data.id } 
+                     key={restaurant.data.id}
+                    className="card--link">
                 <RestaurantCard {...restaurant.data}/>
+                </Link>
             )
         })
 

@@ -91,4 +91,19 @@ body {
 }
 
 
+.card--link{
+	color: currentcolor!important;
+	text-decoration: none;
+}
 
+
+/* max-width: 100%; 
+height: auto; */
+
+
+.banner-card{
+display: flex;
+justify-content: center;
+margin-top: 25px;
+height: 250px;
+}

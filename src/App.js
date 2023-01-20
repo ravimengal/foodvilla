@@ -6,15 +6,17 @@ import Home from './components/Home';
 import About from './components/About';
 import Cart from './components/Cart';
 import Error from './components/Error';
+import RestaurantMenu from './components/RestaurantMenu';
 
 function App() {
   return (
    <>
  <Nav />
    <Routes>
-    <Route path={'/'} element={<Home/>}/>
+    <Route exact path={'/'} element={<Home/>}/>
     <Route path={'/about'} element={<About/>}/>
     <Route path={'/cart'} element={<Cart/>}/>
+    <Route path={'/restaurant/:resId'} element={<RestaurantMenu/>}/>
     <Route path='*' element={<Error/>}/>
    </Routes>
    </>
